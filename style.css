@@ -8,3 +8,18 @@
 
 /* Brand-blue glass navigation: no outline, softly translucent. */
 .site-header>.brand,.site-header>a>.brand{color:#fff}.site-header .main-nav a{color:#edf3fc}.site-header .main-nav a.active,.site-header .main-nav a:hover{color:#fff}.site-header .main-nav a:after{background:#fff}.site-header .search-open,.site-header .mobile-menu{color:#fff}.site-header .brand small{color:#e2ebf8}@media(max-width:720px){.site-header .main-nav{background:rgba(87,125,177,.94);border:0;box-shadow:0 8px 24px #35537b1a}}
+
+/* Gallery topics use the established heading and masonry rhythm. */
+.gallery-section+.gallery-section{margin-top:70px}.gallery-section .section-heading{margin-bottom:30px}
+
+/* Paired quote marks with balanced spacing across all shared quotations. */
+.quote-block{display:flex;flex-direction:column;align-items:center;gap:18px}
+.quote-block .quote-mark{flex:none;height:38px;margin:0;font:80px/1 Georgia,serif}
+.quote-block .quote-close{transform:translateY(12px)}
+@media(max-width:720px){.quote-block{gap:14px}.quote-block .quote-mark{font-size:68px;height:32px}.quote-block .quote-close{transform:translateY(10px)}}
+
+/* Frame the entire quotation, opening left and closing right. */
+.quote-block{width:fit-content;max-width:100%;padding-inline:34px}
+.quote-block .quote-open{align-self:flex-start;transform:translateX(-22px)}
+.quote-block .quote-close{align-self:flex-end;transform:translate(22px,12px)}
+@media(max-width:720px){.quote-block{padding-inline:20px}.quote-block .quote-open{transform:translateX(-12px)}.quote-block .quote-close{transform:translate(12px,10px)}}
