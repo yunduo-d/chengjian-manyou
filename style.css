@@ -33,3 +33,6 @@
 body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]) .page-arrival{animation:page-reveal 1.35s cubic-bezier(.22,.61,.36,1) backwards}
 body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]).js-motion .reveal{transition:opacity 1.35s cubic-bezier(.22,.61,.36,1),transform 1.35s cubic-bezier(.22,.61,.36,1)}
 @media(prefers-reduced-motion:reduce){body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]) .page-arrival{animation:none}body.js-motion .reveal{transition:none}}
+
+/* Final: no decorative small labels beside or above headings. */
+.vertical-label,.eyebrow{display:none!important}
