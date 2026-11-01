@@ -23,3 +23,13 @@
 .quote-block .quote-open{align-self:flex-start;transform:translateX(-22px)}
 .quote-block .quote-close{align-self:flex-end;transform:translate(22px,12px)}
 @media(max-width:720px){.quote-block{padding-inline:20px}.quote-block .quote-open{transform:translateX(-12px)}.quote-block .quote-close{transform:translate(12px,10px)}}
+
+/* ZI02: shared section headings, enlarged brand-blue initial on the baseline. */
+.section-heading .title-group{display:block;min-width:0}
+.initial-heading .heading-initial{display:inline-block;vertical-align:baseline;color:var(--blue);font-size:1.75em;line-height:1;margin-right:.08em;font-weight:400}
+.section-heading p{margin-top:15px}
+
+/* Keep page entrance and content reveals in the same rhythm on all four pages. */
+body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]) .page-arrival{animation:page-reveal 1.35s cubic-bezier(.22,.61,.36,1) backwards}
+body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]).js-motion .reveal{transition:opacity 1.35s cubic-bezier(.22,.61,.36,1),transform 1.35s cubic-bezier(.22,.61,.36,1)}
+@media(prefers-reduced-motion:reduce){body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-page="about"]) .page-arrival{animation:none}body.js-motion .reveal{transition:none}}
