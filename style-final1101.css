@@ -36,3 +36,14 @@ body:is([data-page="routes"],[data-page="places"],[data-page="gallery"],[data-pa
 
 /* Final: no decorative small labels beside or above headings. */
 .vertical-label,.eyebrow{display:none!important}
+
+.home-route-card{text-align:left}.home-route-card h3{font-family:var(--serif);font-size:28px;font-weight:400;margin:24px 0 10px}.home-route-card p{font-size:15px;line-height:1.9;margin:0;color:var(--muted)}
+
+/* Footer brand English: clearer reading size. */
+.site-footer .brand small{font-size:18px;letter-spacing:.16em;line-height:1.6}
+
+.site-header .brand strong{font-size:25px}@media(max-width:720px){.site-header .brand strong{font-size:20px}}
+
+/* Home quotation: modest enlargement, fluid on small screens. */
+body[data-page="home"] #pause .quote-block p{font-size:31px;overflow-wrap:break-word}
+@media(max-width:720px){body[data-page="home"] #pause .quote-block p{font-size:clamp(21px,5.8vw,24px);letter-spacing:1px}}
